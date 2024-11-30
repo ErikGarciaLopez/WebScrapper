@@ -21,7 +21,7 @@ public class WebPageController {
     public List<Webpage> search(@RequestParam("query") String query) {
 
         List<Webpage> list = new ArrayList<>();
-        Iterable<Webpage> result = repository.findAll();
+        Iterable<Webpage> result = repository.findByText(query);
 
         for(Webpage webpage : result) {
             list.add(webpage);

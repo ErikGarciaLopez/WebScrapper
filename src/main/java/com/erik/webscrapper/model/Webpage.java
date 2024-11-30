@@ -13,7 +13,7 @@ public class Webpage {
     private Integer id;
     private String domain;
     private String url;
-    private String tittle;
+    private String title;
     private String description;
     private String picture;
     @Column(name = "`rank`")
